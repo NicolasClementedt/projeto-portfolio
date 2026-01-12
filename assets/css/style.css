@@ -15,9 +15,17 @@
 }
 
 body {
+    display: flex; /* Define o container como flexível */
+    flex-direction: column;
+    min-height: 100vh; /* Define a altura mínima da página como 100% da altura da janela de visualização */
+    margin: 0;
     background: var(--gray-200);
     color: var(--black-800);
     font-family: sans-serif;
+}
+
+main {
+    flex: 1; /* Faz o main crescer e ocupar todo o espaço disponível entre o header e o footer */
 }
 
 h1, h2, h3 {
